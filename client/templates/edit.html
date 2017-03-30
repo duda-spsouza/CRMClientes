@@ -1,0 +1,23 @@
+<div class="panel panel-default" ng-init="showCliente()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" 
+class="glyphicon glyphicon-edit"> </span> Editar Cliente</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="updateCliente()">
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" id="nome" ng-model="cliente.nome" value="cliente.nome">
+    </div>
+    <div class="form-group">
+      <label for="cpf">CPF:</label>
+      <input type="text" class="form-control" id="cpf" ng-model="cliente.cpf" value="cliente.cpf">
+      <div class="form-group">
+      <label for="servcont">Serviços Contratado:</label>
+      <input type="text" class="form-control" id="servcont" ng-model="cliente.servcont" value="cliente.servcont">
+    </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Atualizar</button>
+    <a href="#/clientes" class="btn btn-default"> Cancelar</a>
+</form>		
+    <div>
+<div>

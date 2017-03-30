@@ -1,0 +1,30 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" class="glyphicon glyphicon-plus"> </span> Adiciona um novo Cliente
+	</div>
+	<div class="panel-body">
+		<form ng-submit="addCliente()">
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" id="nome" ng-model="cliente.nome">
+    </div>
+    <div class="form-group">
+      <label for="datanasc">Data de Nascimento:</label>
+      <input type="date" class="form-control" id="datanasc" ng-model="cliente.datanasc">
+    </div>
+    <div class="form-group">
+      <label for="datacad">Data de Cadastro:</label>
+      <input type="date" class="form-control" id="datacad" ng-model="cliente.datacad">
+    </div>
+    <div class="form-group">
+      <label for="cpf">CPF</label>
+      <input type="text" class="form-control" id="cpf" ng-model="cliente.cpf">
+      <div class="form-group">
+      <label for="servcont">Serviços Contratados :</label>
+      <input type="text" class="form-control" id="servcont" ng-model="cliente.servcont">
+    </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Salvar</button>
+    <a href="#/employees" class="btn btn-default"> Cancelar</a>
+</form>		
+    <div>
+<div>

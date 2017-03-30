@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="meuapp">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CRUD Clientes</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	<div class="container">
+	<div class="row">
+		<div class="header clearfix">
+			<nav>
+			  <ul class="nav nav-pills pull-right">
+			    <li role="presentation" class="active"><a href="#/clientes"><span class="glyphicon glyphicon-th-list"> </span> Lista de Clientes</a></li>
+			    <li role="presentation"><a href="#/clientes/create"> 
+			    <span class="glyphicon glyphicon-plus"> </span>	Novo Cliente</a></li>
+			  </ul>
+			</nav>
+			<h3 class="text-muted">Aplicação Web de CRUD Cliente</h3>
+		</div>
+		<div ng-view></div>
+		
+		<footer class="footer well well-sm">
+		    <p>© 2017 eduarda.spsouza</p>
+		</footer>
+
+	</div>
+</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+	<script src="app.js"></script>
+	<script src="controllers/controllers.js"></script>
+	<script src="js/script.js"></script>
+	</body>
+</html>

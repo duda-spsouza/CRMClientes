@@ -1,0 +1,18 @@
+<div class="panel panel-default" ng-init="showCliente()">
+	<div class="panel-heading">
+	  <p class="panel-title">Informação do Cliente</p>
+	</div>
+	<div class="panel-body">
+		<form>
+		<div class="form-group">
+		 <label class="form-control">Nome: {{ cliente.nome }}</label>
+		 <label class="form-control">Data de Nascimento: {{ cliente.datanasc }}</label>
+		 <label class="form-control">Data de Cadastro: {{ cliente.datacad }}</label>
+		 <label class="form-control">CPF: {{ cliente.cpf }}</label>
+		 <label class="form-control">Serviços Contratados: {{ cliente.servcont }}</label>
+		 <label class="form-control">ID: {{ cliente._id }}</label>
+		<a href="#/clientes" class="btn btn-default"> Cancel</a>
+		</div>
+	</form>		
+    <div>
+<div>
